@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @time 17:55
  */
 @RestController
-//@Secured(SecurityUtils.ROLE_ADMIN)
+@Secured(SecurityUtils.ROLE_ADMIN)
 @RequestMapping("api/admin")
 @RequiredArgsConstructor
 public class AdminController

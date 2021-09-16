@@ -20,7 +20,7 @@ import java.util.List;
  * @time 18:07
  */
 @RestController
-//@Secured(SecurityUtils.ROLE_USER)
+@Secured(SecurityUtils.ROLE_USER)
 @RequestMapping("api/posts")
 @RequiredArgsConstructor
 public class PostController
