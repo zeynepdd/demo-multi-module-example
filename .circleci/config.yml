@@ -1,0 +1,14 @@
+version: 2.1
+orbs:
+  ma-java: mobileaction/ma-java@1.0.0
+workflows:
+  main_workflow:
+    jobs:
+      - ma-java/build_test:
+          java-tag: '11' # select java version here 8/11 etc.
+      - ma-java/coverage:
+          codacy_project_token: 610b9f97c3e646a7bf6223a3b1b31ebe
+          requires: [ma-java/build_test]
+          filters:
+            branches:
+              ignore: master
