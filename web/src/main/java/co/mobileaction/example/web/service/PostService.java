@@ -50,10 +50,4 @@ public class PostService implements IPostService
     {
         postRepository.deleteByUserId(userId);
     }
-
-    @Override
-    public Long findUserId(Long postId)
-    {
-        return postRepository.findUserIdById(postId);
-    }
 }

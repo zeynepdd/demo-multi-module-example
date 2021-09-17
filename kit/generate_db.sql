@@ -27,6 +27,18 @@ CREATE TABLE posts (
   body varchar(255) NOT NULL
 );
 
-CREATE TABLE users (
-  id bigint PRIMARY KEY NOT NULL
+CREATE TABLE users(
+    id bigint PRIMARY KEY NOT NULL,
+    name varchar(200) NOT NULL,
+    userName varchar(200) NOT NULL,
+    email varchar(100),
+    street varchar(300),
+    suite varchar(300),
+    city varchar(100),
+    zipCode varchar(50),
+    phone varchar(20),
+    website varchar(200),
+    companyName varchar(150),
+    catchPhrase varchar(150),
+    bs varchar(200)
 );
